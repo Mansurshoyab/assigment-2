@@ -86,7 +86,6 @@ li > a {
 .banner{
     display: flex;
     align-items: center;
-    margin-bottom: 200px;
 }
 .banner-content{
     max-width: 640px;
@@ -122,6 +121,83 @@ li > a {
 }
 
 /* Standard Curriculum styles */
+.standard-curriculum{
+    max-width: 1140px;
+    margin: 0 auto;
+    background-image: url(../assets/bg.png);
+    margin-bottom: 200px;
+    background-size: cover;     
+	background-position: center; 
+    background-repeat: no-repeat;
+
+}
+
+.curriculum{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+}
+
+.curriculum-title{
+    text-align: center;
+    font-size: 46px;
+    font-weight: 700;
+}
+
+.card-description{
+    color: rgb(128, 128, 128);
+    margin-bottom: 50px;
+}
+
+.curriculum-card-1{
+    padding: 50px 5px;
+    box-sizing: border-box;
+    border: 0.94px solid rgb(222, 245, 255);
+    border-radius: 18.86px;
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(222, 245, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+}
+
+.curriculum-card-2{
+    padding: 50px 5px;
+    box-sizing: border-box;
+    border: 0.94px solid rgb(255, 244, 220);
+    border-radius: 18.86px;
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(255, 244, 220),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+}
+
+.curriculum-card-3{
+    padding: 50px 5px;
+    box-sizing: border-box;
+    border: 0.94px solid rgb(242, 232, 255);
+    border-radius: 18.86px;
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+}
+
+.curriculum div a{
+    text-decoration: none;
+}
+
+.read-more-1{
+    
+    color: rgb(100, 200, 255);
+    font-size: 16px;
+    font-weight: 700;
+}
+.read-more-2{
+    color: rgb(240, 170, 0);
+    font-size: 16px;
+    font-weight: 700;
+}
+.read-more-3{
+    color: rgb(135, 0, 255);
+    font-size: 16px;
+    font-weight: 700;
+}
 
 
 /* Responsive for phone */
@@ -175,5 +251,35 @@ li > a {
         font-weight: 400;
         margin-top: 20px;
     }
+
+
+    .standard-curriculum {
+        padding: 0 15px;
+    }
+
+    .curriculum{
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .curriculum-card-1, .curriculum-card-2, .curriculum-card-3 {
+        width: 100%; 
+        padding: 20px;
+        box-sizing: border-box; 
+    }
+
+        .card-title {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+    
+        .card-description {
+            font-size: 14px;
+        }
+    
+        .read-more-1, .read-more-2, .read-more-3 {
+            font-size: 14px; 
+        }
 
 }
