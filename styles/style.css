@@ -78,7 +78,50 @@ li > a {
 }
 
 /* banner section style */
+.banner-section{
+    max-width: 1140px;
+    margin: 0 auto;
+}
 
+.banner{
+    display: flex;
+    align-items: center;
+    margin-bottom: 200px;
+}
+.banner-content{
+    max-width: 640px;
+}
+
+.banner-title{
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 61px;
+    margin: 50px 0 20px;
+}
+.empowering{
+    display: block;
+    color: rgb(254, 163, 1);
+}
+.towards{
+    color: rgb(1, 172, 253)
+}
+
+.banner-description{
+    color: rgb(17, 17, 17);
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+.banner-btn{
+    color: white;
+    width: 197px;
+    height: 50px;
+    border-radius: 12px;
+    background: rgb(17, 17, 17);
+}
+
+/* Standard Curriculum styles */
 
 
 /* Responsive for phone */
@@ -96,6 +139,40 @@ li > a {
         height: 2px;
         width: 100%;
         background: orange;
+        margin-top: 20px;
+    }
+    .banner{
+        flex-direction: column-reverse;
+        max-width: 570px;
+    }
+
+    .banner-image {
+        margin: 0 50px;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .banner-image img {
+        width: 100%;
+        height: auto;
+    }
+
+
+    .banner-content{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .banner-title{
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 40px;
+        margin: 50px 0 20px;
+    }
+    .banner-description{
+        font-size: 16px;
+        font-weight: 400;
         margin-top: 20px;
     }
 
