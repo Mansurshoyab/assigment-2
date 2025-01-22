@@ -199,6 +199,29 @@ li > a {
     font-weight: 700;
 }
 
+.direction{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.direction-item{
+    margin: 50px 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    background: rgb(254, 163, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.fa-angle-right, .fa-angle-left{
+    color: white;
+    font-size: 40px;
+}
+
 /* our stories styles */
 
 .our-stories{
@@ -362,6 +385,11 @@ footer{
     gap: 20px;
 }
 
+footer ul {
+    padding-left: 0;
+}
+
+
 
 /* Responsive for phone */
 
@@ -426,6 +454,10 @@ footer{
         align-items: center;
     }
 
+    .direction{
+        display: none;
+    }
+
     .curriculum-card-1, .curriculum-card-2, .curriculum-card-3 {
         width: 100%; 
         padding: 20px;
@@ -469,4 +501,15 @@ footer{
             height: auto; 
         }
 
+        .footer-container{
+            flex-direction: column;
+        }
+        footer{
+            padding: 10px 10px 50px 10px;
+        }
+
+        .item1{
+            margin: 0;
+        }
+    
 }
